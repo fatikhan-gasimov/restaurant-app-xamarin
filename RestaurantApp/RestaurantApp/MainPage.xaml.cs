@@ -13,6 +13,16 @@ namespace RestaurantApp
         public MainPage()
         {
             InitializeComponent();
+
+            Task.Run(RotateImage);
+        }
+
+        private async void RotateImage()
+        {
+            while (true)
+            {
+                await BannerImg.RelRotateTo(360, 5000, Easing.Linear);
+            }
         }
     }
 }
