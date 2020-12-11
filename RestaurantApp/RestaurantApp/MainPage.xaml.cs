@@ -22,6 +22,7 @@ namespace RestaurantApp
             while (true)
             {
                 await BannerImg.RelRotateTo(360, 5000, Easing.Linear);
+                
             }
         }
     }
